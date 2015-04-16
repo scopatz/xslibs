@@ -20,17 +20,18 @@ batches = 3
 ################################
 ### Unit Cell Sepcifications ###
 ################################
+# all in [cm]
 fuel_cell_radius = 0.410
 void_cell_radius = 0.4185
 clad_cell_radius = 0.475
 unit_cell_pitch  = 0.65635 * 2.0
 unit_cell_height = 10.0
 
-fuel_density = 10.7
-clad_density = 5.87                         # Cladding Density
-cool_density = 0.73                         # Coolant Density
+fuel_density = 10.7  # Fuel density [g/cc]
+clad_density = 5.87  # Cladding Density [g/cc]
+cool_density = 0.73  # Coolant Density [g/cc]
 
-fuel_specific_power = 40.0 / 1000.0   # Power garnered from fuel [W / g]
+fuel_specific_power = 40.0   # Power garnered from fuel [W / g]
 
 # LEU
 initial_heavy_metal = {     # Initial heavy metal mass fraction distribution
@@ -52,8 +53,8 @@ k_particles   = 500       # Number of particles to run per kcode cycle
 k_cycles      = 130       # Number of kcode cycles to run
 k_cycles_skip = 30        # Number of kcode cycles to run but not tally at the begining.
 
-# group_structure = [1.0e-9, 10]
-group_structure = logspace(-9, 1, 10)
+group_structure = [1.0e-9, 10]
+#group_structure = logspace(-9, 1, 10)
 
 # Temperature
 # Should be a positive multiple of 300 K (ie 300, 600, 900, etc)
