@@ -31,7 +31,9 @@ fuel_density = 10.7  # Fuel density [g/cc]
 clad_density = 5.87  # Cladding Density [g/cc]
 cool_density = 0.73  # Coolant Density [g/cc]
 
-fuel_specific_power = 40.0   # Power garnered from fuel [W / g]
+# choose one of the following
+flux = 3e14  # the average reactor flux in [n/cm2/s]
+#fuel_specific_power = 40.0   # Power garnered from fuel [W / g]
 
 # LEU
 initial_heavy_metal = {     # Initial heavy metal mass fraction distribution
