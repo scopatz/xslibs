@@ -1,3 +1,6 @@
 debug.txt
 build-*
 *.*~
+.ipynb_checkpoints/
+TAPE9.INP
+_build-lwr1g/
