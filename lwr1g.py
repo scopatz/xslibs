@@ -37,11 +37,11 @@ flux = 3e14  # the average reactor flux in [n/cm2/s]
 
 # LEU
 initial_heavy_metal = {     # Initial heavy metal mass fraction distribution
-    922350: 0.05,
-    922380: 0.95,
+    922350: 0.033,
+    922380: 0.967,
     }
 
-enrichment = 0.05
+enrichment = 0.033
 
 pnl = 0.96
 
