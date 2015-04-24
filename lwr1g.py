@@ -1,3 +1,4 @@
+import numpy as np
 from numpy import logspace
 from xsgen.nuc_track import transmute
 
@@ -12,7 +13,7 @@ burn_regions = 1     # Number of burnup annular regions.
 burn_time = 365*10  # Number of days to burn the material [days]
 time_step = 100      # Time step by which to increment the burn [days]
 burn_times = [0, 3]
-burn_times.extend(range(100, 7001, 100))  # we now have [0, 3, 100, 200 .. 4000]
+#burn_times.extend(range(100, 7001, 100))  # we now have [0, 3, 100, 200 .. 4000]
 
 batches = 3
 
@@ -51,12 +52,12 @@ fuel_chemical_form = {                 # Dictionary of initial fuel loading.
     "IHM": 1.0,
     }
 
-k_particles   = 500       # Number of particles to run per kcode cycle
+k_particles   = 5000       # Number of particles to run per kcode cycle
 k_cycles      = 130       # Number of kcode cycles to run
 k_cycles_skip = 30        # Number of kcode cycles to run but not tally at the begining.
 
 group_structure = [1.0e-9, 10]
-#group_structure = logspace(-9, 1, 10)
+openmc_group_struct = np.logspace(1, -9, 101)
 
 # Temperature
 # Should be a positive multiple of 300 K (ie 300, 600, 900, etc)
