@@ -12,8 +12,8 @@ formats = ('brightlite',)
 burn_regions = 1     # Number of burnup annular regions.
 burn_time = 365*10  # Number of days to burn the material [days]
 time_step = 100      # Time step by which to increment the burn [days]
-burn_times = [0, 3]
-#burn_times.extend(range(100, 7001, 100))  # we now have [0, 3, 100, 200 .. 4000]
+burn_times = [0, 3] #+ list(range(10, 101, 10))
+burn_times.extend(range(100, 7001, 100))  # we now have [0, 3, 100, 200 .. 4000]
 
 batches = 3
 
